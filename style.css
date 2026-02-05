@@ -1,0 +1,145 @@
+body{
+    color: #333;
+    background-color: #f4f4f9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#header{
+    background-color: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url("https://emerging-europe.com/wp-content/uploads/2018/05/bigstock-fintech-icon-on-abstract-fina-209216539-990x556.jpg");
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
+
+.intro{
+    font-style: italic;
+    font-size: 1.2em;
+    color: white;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #004080;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+}
+
+.nav-list li{
+    margin-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+section{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.news-item{
+    background-color: white;
+    border-left: 4px solid #004080;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 35vw;
+}
+
+.news-item.highlight{
+    border-color: #00b894;
+    background-color: #e8fff4;
+}
+
+footer{
+    background-color: #002b5c;
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 20px;
+}
+
+#contact a{
+    color: #004080;
+    text-decoration: none;
+}
+
+#contact a:hover{
+    color: #00b894;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-item{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+}
+
+#sponzors{
+    background-color: #f4f4f9;
+}
+img{
+    height: 20vh;
+}
+
+.grid-item img:first()
+{
+    height: 5vh;
+}
+@media only screen and (max-width: 1300px)
+{
+   .grid-container{
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    .grid-container{
+        grid-template-columns: (1,1fr);
+        display: block;
+    }
+    img{
+        height: 25vh;
+    }
+}
+
+
+@media only screen and (max-width: 500px)
+{
+    .container{
+        flex-direction: column;
+    }
+    .news-item{
+        width: 80vw;
+    }
+    
+}
