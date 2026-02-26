@@ -8,24 +8,6 @@
     <script src="https://kit.fontawesome.com/d779462ed6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- CSS 
-     jezik za opisivanje izgleda HTML elemenata
-     3. načina "povezivanja" HTML i CSS:
-     1. vanjski (external) - koristimo <link>
-       - najbolji i najčešći način
-     2. unutarnji (internal) - unutar <head> elementa
-        dodajemo element <style>
-     3. linijski (ugrađeni) - unutar nekog HTML elementa
-     
-     Kako označiti neki element za primjenu CSS pravila?
-     - selektori -> konkretan HTML element (npr. svi <p> elementi)
-        klasa (class - znak .), ID (znak #)
-     - grupni selektori -> više selektora odjednom
-     - potomci
-     - pseudo-klase
-     pseudo-element
-     -atributni selektori
-     -->
      <header id="header">
         <h1>TechFest 2025</h1>
         <p class="intro">Najnovije vijesti iz svijeta tehnologije i inovacija.</p>
@@ -73,6 +55,10 @@
                 </article>
             </div>
         </section>
+         <section id="video">
+            <video preload="auto" autoplay muted loop src="invideo-ai-1080 20In 2060 20Seconds_ 20Why 20TechFest 202025 20Changes 202026-02-12 204.webm"></video>
+        </section>
+         
         <section id="sponsors">
             <h2>Sponzori</h2>
             <div class="grid-container">
@@ -96,6 +82,7 @@
                 </div>
             </div>
         </section>
+         
         <section id="contact">
             <h2>Kontakt</h2>
             <p>
@@ -141,4 +128,5 @@ unutar klase news-item.
 .pero::before{
 content: '⏺';
 }
+
 -->
